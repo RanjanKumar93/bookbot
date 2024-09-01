@@ -1,16 +1,6 @@
 def main():
     bookPath = "books/frankenstein.txt"
-    print(f"--- Begin report of {bookPath} ---")
-    file_contents = read_file(bookPath)
-    print(f"{word_count(file_contents)} words found in the document")
-    count_char_list = list(count_characters(file_contents).items())
-    count_char_list.sort(reverse=True, key=sort_on)
-    for key, value in count_char_list:
-        print(f"The '{key}' character was found {value} times")
-    print("--- End report ---")
-
-
-def sort_on(item):
+    print(
     return item[1]
 
 
